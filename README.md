@@ -49,20 +49,26 @@ Klient:
 
 0. Przeczytaj wszystko zanim cokolwiek zrobisz żeby wiedzieć gdzie co implementować
 1. Zaimplementuj metodę sprawdzającą czy dana liczba jest pierwsza
+
 2. Zaimplementuj komunikację dwukierunkową klient/server:
 	- wykorzystaj observer pattern
 	- masz implementację komunikacji dwukierunkowej w kodzie
+
 	Flow:
+
 		- klient pobiera pieniek servera
 		- wykorzystując odpowiednią metodą rejestruje się w nim
 		- server może wykonać odpowiednie metody wykorzystując listę posiadanych klientów
+
 3. Zaimplementuj rozproszone sprawdzanie która z danych liczb jest pierwsza:
+
 	- istnieje implementacja klienta (workera) który potrafi sprawdzić czy dana liczba jest pierwsza
 	- klienci sprawdzający rejestrują się w serwerze (masterze)
 	- serwer (master) może przyjąć tablicę/listę liczb, dla których ma sprawdzić które liczby są pierwsze, wykorzystuje do tego posiadaną listę klientów sprawdzających
 	
 
-4. Powinny istnieć 3 projekty (moduły maven, nazwy przykładowe): 
+4. Powinny istnieć 3 projekty (moduły maven, nazwy przykładowe):
+
 	- worker_check - sprawdza czy dana liczba jest pierwsza, rejestruje się w masterze
 	- master - posiada rejestr workerów, przyjmuje zapytanie o sprawdzenie która z liczb jest pierwsza, odpytuje workerów o poszczególne liczby
 	- client - przekazuje zadanie sprawdzenia listy pod kątem tego która z liczb jest pierwsza do mastera i drukuje wynik
