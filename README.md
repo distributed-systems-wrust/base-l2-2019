@@ -54,7 +54,7 @@ Klient:
 	- wykorzystaj observer pattern
 	- masz implementację komunikacji dwukierunkowej w kodzie
 
-	Flow:
+	- Flow:
 
 		- klient pobiera pieniek servera
 		- wykorzystując odpowiednią metodą rejestruje się w nim
