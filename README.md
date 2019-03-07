@@ -21,7 +21,7 @@ java -jar client/target/list2-2019-client-1.0-SNAPSHOT-jar-with-dependencies.jar
 ### [Docs](https://docs.oracle.com/javase/tutorial/rmi/index.html)
 
 
-###Co się dzieje w kodzie (celowo nie jako komentarze w kodzie):
+### Co się dzieje w kodzie (celowo nie jako komentarze w kodzie):
 
 Server: 
 
