@@ -23,18 +23,22 @@ java -jar client/target/list2-2019-client-1.0-SNAPSHOT-jar-with-dependencies.jar
 
 Co się dzieje w kodzie (celowo nie jako komentarze w kodzie):
 
-Server: 
-	1. tworzy rejestr RMI na porcie 8080
-	2. eksportuje implementację serwisu
-	3. Binduje implementację pod daną nazwą
+	Server: 
 
-Klient:
-	1. Pobiera rejestr
-	2. Tworzy implementację callbacka
-	3. Eksportuje callbacka tak aby była obiektem zdalnym
-	4. Pobiera pieniek serwisu (wystawionego przez serwer)
-	5. Wywołuje metodę w pieńku serwisu przekazując dane i zdalny callback
+		1. tworzy rejestr RMI na porcie 8080
+		2. eksportuje implementację serwisu
+		3. Binduje implementację pod daną nazwą
 
+	Klient:
+
+		1. Pobiera rejestr
+		2. Tworzy implementację callbacka
+		3. Eksportuje callbacka tak aby była obiektem zdalnym
+		4. Pobiera pieniek serwisu (wystawionego przez serwer)
+		5. Wywołuje metodę w pieńku serwisu przekazując dane i zdalny callback
+
+
+Jak wygląda komunikacja:
 
 1. Klient wywołuje metodę w pieńku serwera, przekazując swój callback jako zdalny obiekt
 2. Serwer odbiera wywołanie klienta, w odpowiedzi wywołuje metodę przekazanego zdalnego callback
