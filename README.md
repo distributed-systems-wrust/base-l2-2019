@@ -74,4 +74,4 @@ Klient:
 	- client - przekazuje zadanie sprawdzenia listy pod kątem tego która z liczb jest pierwsza do mastera i drukuje wynik
 
 
-5. Wykonania zdalnych metod są blokujące. Aby Wykonać wiele na raz, wykorzystaj Java 8 Streams i parallelStream(), [Docs](https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html)
+5. Wykonania zdalnych metod są blokujące. Aby wykonać wiele metod na raz, wykorzystaj Java 8 Streams i parallelStream(), [Docs](https://docs.oracle.com/javase/tutorial/collections/streams/parallelism.html)
