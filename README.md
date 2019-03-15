@@ -42,7 +42,7 @@ Klient:
 
 1. Klient wywołuje metodę w pieńku serwera, przekazując swój callback jako zdalny obiekt
 2. Serwer odbiera wywołanie klienta, w odpowiedzi wywołuje metodę przekazanego zdalnego callback
-3. Implementacja callback odbiera wywołanie z serwera
+3. Implementacja callbacka odbiera wywołanie z serwera
 
 
 ### Zadania:
